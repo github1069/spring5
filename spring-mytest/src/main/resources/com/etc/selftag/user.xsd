@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			xmlns="http://www.etc.com/schema/user"
+			targetNamespace="http://www.etc.com/schema/user"
+			elementFormDefault="qualified">
+
+	<xsd:element name="user">
+		<xsd:complexType>
+			<xsd:attribute name="id" type="xsd:string" />
+			<xsd:attribute name="name" type="xsd:string" />
+			<xsd:attribute name="age" type="xsd:integer" />
+			<xsd:attribute name="phone" type="xsd:string" />
+			<xsd:attribute name="email" type="xsd:string"/>
+		</xsd:complexType>
+	</xsd:element>
+
+</xsd:schema>
