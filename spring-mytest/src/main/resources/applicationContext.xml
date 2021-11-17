@@ -6,8 +6,18 @@
         http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context.xsd
         ">
 
-    <context:component-scan base-package="com.etc.service" ></context:component-scan>
+<!--    <context:component-scan base-package="com.etc.service" ></context:component-scan>-->
+<!--	<bean id="apple" class="com.etc.overed.lookupmethod.Apple" ></bean>-->
+<!--	<bean id="b" class="com.etc.overed.lookupmethod.B" ></bean>-->
+
+<!--	<bean id="lookUPT" class="com.etc.overed.lookupmethod.LookUPT">-->
+<!--		<lookup-method bean="apple" name="getABpple"></lookup-method>-->
+<!--		<lookup-method bean="b" name="getABpple"></lookup-method>-->
+<!--	</bean>-->
+
     <bean id="prizeUser" class="com.etc.entity.PrizeUser" ></bean>
-	<bean id="prizeGame" class="com.etc.entity.PrizeGame" ></bean>
+	<bean id="myBeanPostProcessor" class="com.etc.entity.MyBeanPostProcessor"></bean>
+<!--	<bean id="prizeGame" class="com.etc.entity.PrizeGame" ></bean>-->
+<!--	<bean id="myCustomFactoryBean" class="com.etc.facbean.MyCustomFactoryBean"/>-->
 
 </beans>

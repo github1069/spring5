@@ -14,11 +14,11 @@ public class CustomBeanFactoryPostProcess implements BeanFactoryPostProcessor {
 	@Override
 	public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
 		System.out.println("扩展了beanFactoryPostProcess--------------");
-		BeanDefinition prizeUser = beanFactory.getBeanDefinition("prizeUser");
-		if(prizeUser != null){
-			MutablePropertyValues propertyValues = prizeUser.getPropertyValues();
-			System.out.println("prizeUser----propertyValues："+propertyValues.toString());
-		}
+//		BeanDefinition prizeUser = beanFactory.getBeanDefinition("prizeUser");
+//		if(prizeUser != null){
+//			MutablePropertyValues propertyValues = prizeUser.getPropertyValues();
+//			System.out.println("prizeUser----propertyValues："+propertyValues.toString());
+//		}
 
 	}
 }
